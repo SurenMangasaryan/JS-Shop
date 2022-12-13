@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: rgb(0, 0, 51);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.header .left-side{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header .right-side{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.nav {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+.nav .left-side{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.nav .left-side .list-style{
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.nav .image-box{
+    width: 60px;
+    height: 60px;
+}
+
+.nav .image-box img{
+    width: 100%;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.right-side .serach-fromArr{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: darkgray;
+    color: white;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.right-side .serach-fromArr::placeholder{
+    color: white;
+    padding: 0 5px;
+}
+
+.right-side .fa-cart-arrow-down{
+    font-size: 20px;
+}
+
+.login,.register{
+    padding: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: all .5s linear;
+    cursor: pointer;
+}
+.login{
+    background-color: rgba(100, 148, 237, 0.473);
+}
+.login:hover{
+    background-color: rgba(100, 148, 237, 0.562);
+}
+.register{
+    background-color: red;
+}
+
+.innerSlider{
+    margin-top: 50px;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.imageSlide{
+    width: 400vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all .5s linear;
+    margin-left: 0vw;
+}
+
+.innerSlider img{
+    width: 50vw;
+    height: 500px;
+    transition: all .5s linear;
+}
+
+.fa-angle-left{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(10px, -50%);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.fa-angle-right{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(-10px, -50%);
+    font-size: 50px;
+    cursor: pointer;
+}
+.slideLine{
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, 10px);
+}
+.slideLines{
+    width: 50px;
+    height: 5px;
+    border-radius: 15px;
+    background-color: gray;
+    cursor: pointer;
+}
