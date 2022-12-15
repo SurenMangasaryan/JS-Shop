@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
         <div class="left-side">
-            <i class="fa fa-envelope" aria-hidden="true"></i> <p>typeshop@me.com</p>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <p>typeshop@me.com</p>
 
-            <i class="fa fa-phone" aria-hidden="true"></i> <p>06 76 56 48 93</p>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>06 76 56 48 93</p>
         </div>
         <div class="right-side">
             <i class="fa fa-address-book" aria-hidden="true"></i>
@@ -37,27 +43,131 @@
 
         <div class="right-side">
             <input type="text" class="serach-fromArr" placeholder="Enter product name">
-            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+            <i class="fa fa-cart-arrow-down" aria-hidden="true">
+                <div class="circle-count"></div>
+            </i>
             <button class="login">Login</button>
             <button class="register">Register</button>
         </div>
     </nav>
-    
-    <div class="section1">
+
+    <section class="section1">
         <div class="innerSlider">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
             <div class="imageSlide"></div>
             <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+    </section>
 
-            <div class="slideLine">
-                <div class="slideLines" id="line1"></div>
-                <div class="slideLines" id="line2"></div>
-                <div class="slideLines" id="line3"></div>
-                <div class="slideLines" id="line4"></div>
+    <section class="section2">
+        <div class="all-prdoucts">
+            <div class="categories"></div>
+            <div class="innerProduct"></div>
+        </div>
+
+        <div class="arrayProducts"></div>
+
+        <div class="price">
+            <span class="allPriceStyle">All Price:</span>
+            <p class="allPrice"></p>
+        </div>
+
+    </section>
+
+    <section class="section3">
+        <div class="s3-content">
+            <h2>Our Brands</h2>
+            <p>The best brands in the markets</p>
+        </div>
+
+        <div class="imageSlider">
+            <div class="slider2-icons">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </div>
+
+            <div class="all-slides">
+                <div class="slide-first">
+                    <img src="https://type-shop.vercel.app/images/MSI-Logo.png">
+                    <img src="https://type-shop.vercel.app/images/sumsung_logo.png">
+                    <img src="https://type-shop.vercel.app/images/i_phone.png">
+                    <img src="https://type-shop.vercel.app/images/hp_i.png">
+                </div>
+
+                <div class="slide-second">
+                    <img src="https://type-shop.vercel.app/images/asus_rog.png">
+                    <img src="https://type-shop.vercel.app/images/amd_r.png">
+                    <img src="https://type-shop.vercel.app/images/dell.png">
+                    <img src="https://type-shop.vercel.app/images/Razer-Logo-Horizontal-1-1.png">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="section4">
+        <div class="side-1">
+            <div class="image-box">
+                <img src="https://type-shop.vercel.app/LogoMakr-4g0P6C.png" alt="">
+            </div>
+            <div class="side1-content">
+                <p>2 Allée Andersen</p>
+                <p>69780 Mions Lyon</p>
+                <p>France</p>
+            </div>
+
+            <div class="side1-content2">
+                <p>Phone: 06 76 56 48 93</p>
+                <p>Email: typeshop@me.com</p>
+            </div>
+        </div>
+
+        <div class="side-2">
+            <h3>Useful Links</h3>
+            <ul>
+                <li class="li-1">Home</li>
+                <li>About us</li>
+                <li>Services</li>
+                <li>Terms of service</li>
+                <li>Privacy policy</li>
+            </ul>
+        </div>
+
+        <div class="side-3">
+            <h3>Our Services</h3>
+            <ul>
+                <li class="li-1">Web Design</li>
+                <li>Web Development</li>
+                <li>Product Management</li>
+                <li>Marketing</li>
+                <li>Graphic Design</li>
+            </ul>
+        </div>
+
+        <div class="side-4">
+            <h3>Join Our Newsletter</h3>
+            <p class="li-1">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+
+            <input type="email" placeholder="email@domain.com">
+            <button class="send-it-btn">Send It</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="left-side-footer">
+            <h3>© Copyright <span>Type Shop.</span> All Rights Reserved </h3>
+            <p>Designed by Type Shop</p>
+        </div>
+
+        <div class="right-side-footer">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+        </div>
+    </footer>
 
     <script src="/script.js"></script>
 </body>
+
 </html>
